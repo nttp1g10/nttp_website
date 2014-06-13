@@ -1,0 +1,66 @@
+{% extends "worldapp/base.html" %}
+{% load staticfiles %}
+{% block content %}
+	<form>
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="row" id="recipe_head">
+					<h2>Add Recipe</h2>
+					<div class="row">
+						<div class="large-4 columns">
+							<img src="http://i1056.photobucket.com/albums/t378/nttp1090/pho_zps6110b32d.jpg" alt="food image">
+						</div>
+						<div class="large-2 columns">
+							<label>Upload an image: 
+								<input type="text" placeholder="Path" name="filename" />
+								<a href="#" class="button tiny">Browser</a>
+							</label>
+						</div>
+						<div class="large-6 columns"></div>
+					</div>
+				</div>
+				<div class="row" id="recipe_body">
+					<div class="large-12 columns">
+						<h2>Brief</hs>
+						<textarea>
+							Brief description
+						</textarea>
+					</div>
+					<div class="large-12 columns">
+						<h2>Ingredients</h2>
+						<!-- Use template to generate a table of ingredients -->
+						<div class="row">
+							<div class="large-2 columns inline">
+								<label class="left inline">Ingredient 1</label>
+							</div>
+							<div class="large-7 columns">
+								<input type="text" placeholder="Ingredient"/>
+							</div>
+							<div class="large-1 columns">
+								<input type="text" placeholder="Qty">
+							</div>
+							<div class="large-1 columns">
+								<input type="text" placeholder="Unit">
+							</div>
+							<div class="large-1 columns">
+								<a href="#" class="button tiny">Remove</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-1 columns">
+								<a href="#" class="button tiny">Add</a>
+							</div>
+						</div>
+					</div>
+					<div class="large-12 columns">
+						<h2>Preparation Method</h2>
+						<!-- Should be loaded from files -->
+						<textarea>
+							Preparation
+						</textarea>
+					</div>
+				</div>
+			</div>
+		</dliv>
+	</form>
+{% endblock %}

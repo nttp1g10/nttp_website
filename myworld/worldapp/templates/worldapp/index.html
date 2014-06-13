@@ -1,0 +1,33 @@
+{% extends "worldapp/base.html" %}
+{% load staticfiles %}
+<!-- {% block script %}
+	<script src="{% static 'worldapp/js/foundation/foundation.orbit.js' %}"></script>
+{% endblock %} -->
+{% block content %}
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="row">
+				<div class="large-12 hide-for-small columns">
+					<div id="site_banner">
+						<span><img src="http://i1056.photobucket.com/albums/t378/nttp1090/site_banner_zps0a0faec2.png"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="large-6 hide-for-small columns">
+					<!-- <a data-orbit-link="Beef-Noodle-Soup" class="small button">Pho</a>
+					<a data-orbit-link="Hue-Beef-Noodle-1" class="small button">Hue1</a>
+					<a data-orbit-link="Hue-Beef-Noodle-2" class="small button">Hue2</a> -->
+					<ul id="featured_foods" data-orbit>
+						<li data-orbit-slide="Beef-Noodle-Soup"><img src="http://i1056.photobucket.com/albums/t378/nttp1090/pho_zps7eb78bb4.jpg" alt="slide image">Beef Noodle Soup</li>
+              			<li data-orbit-slide="Hue-Beef-Noodle-1"><img src="http://i1056.photobucket.com/albums/t378/nttp1090/P1080047_zps99364fc0.jpg" alt="slide image">Hue Beef Noodle 1</li>
+              			<li data-orbit-slide="Hue-Beef-Noodle-2"><img src="http://i1056.photobucket.com/albums/t378/nttp1090/bunbo_zps99342b28.jpg" alt="slide image">Hue Beef Noodle 2</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

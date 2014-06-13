@@ -1,0 +1,31 @@
+{% extends "worldapp/base.html" %}
+{% load staticfiles %}
+{% block content %}
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="row" id="recipe_head">
+				<div class="large-4 columns">
+					<img src="http://i1056.photobucket.com/albums/t378/nttp1090/pho_zps6110b32d.jpg" alt="food image">
+				</div>
+				<div class="large-8 columns">
+					<p>
+						<b>Brief:</b> Brief description of the food goes here
+					</p>
+				</div>
+			</div>
+			<div class="row" id="recipe_body">
+				<div class="large-12 columns">
+					<h2>Ingredients</h2>
+					<!-- Use template to generate a table of ingredients -->
+					<p>Ingredients go here</p>
+				</div>
+				<div class="large-12 columns">
+					<h2>Preparation Method</h2>
+					<!-- Should be loaded from files -->
+					<p>Preparation goes here</p>
+				</div>
+			</div>
+
+		</div>
+	</dliv>
+{% endblock %}
